@@ -16,16 +16,16 @@ function generateRandomBetween(min, max, exclude) {
 }
 
 // function generateRandomBetween(min, max, exclude) {
-//     const rndNum = Math.floor(Math.random() * (max - min + 1)) + min;
+//   const rndNum = Math.floor(Math.random() * (max - min + 1)) + min;
 
-//     if (rndNum === exclude) {
-//       const newMax = exclude === max ? exclude - 1 : max;
-//       const newMin = exclude === min ? exclude + 1 : min;
-//       return generateRandomBetween(newMin, newMax, exclude);
-//     } else {
-//       return rndNum;
-//     }
+//   if (rndNum === exclude) {
+//     const newMax = exclude === max ? exclude - 1 : max;
+//     const newMin = exclude === min ? exclude + 1 : min;
+//     return generateRandomBetween(newMin, newMax, exclude);
+//   } else {
+//     return rndNum;
 //   }
+// }
 
 let minBoundary = 1;
 let maxBoundary = 100;
@@ -47,7 +47,7 @@ function GameScreen({ userNumber, onGameOver }) {
     ) {
       Alert.alert("Don't lie!, You're trying to trick the App.", [
         {
-          text: "My Bad!",
+          text: "My Bad! ",
           style: "cancel",
         },
       ]);
