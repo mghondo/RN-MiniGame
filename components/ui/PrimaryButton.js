@@ -1,4 +1,5 @@
 import { View, Text, TextInput, Pressable, StyleSheet } from "react-native";
+import Colors from "../../constants/color";
 
 function PrimaryButton({ children, onPress }) {
   function pressHandler() {
@@ -30,20 +31,20 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   buttonInnerContainer: {
-    backgroundColor: "#b0d0c8",
+    backgroundColor: Colors.buttonColor,
     borderRadius: 28,
     paddingVertical: 8,
     marginVertical: 5,
     paddingHorizontal: 16,
     elevation: 2,
-    shadowColor: "#1a1c1c",
+    shadowColor: Colors.shadowColor,
     //IOS below
     shadowOffset: { width: 3, height: 3 },
     shadowRadius: 6,
     shadowOpacity: 1,
   },
   buttonStyles: {
-    color: "#1a1c1c",
+    color: "#1a1c1c", // not currently used
     textAlign: "center",
   },
   pressed: {
