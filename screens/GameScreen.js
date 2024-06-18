@@ -83,6 +83,7 @@ function GameScreen({ userNumber, onGameOver }) {
         </View>
       </View> */}
       <View style={styles.screen2}>
+        {/* <View style={styles.buttonsContainer}> */}
         <View>
           <PrimaryButton onPress={nextGuessHandler.bind(this, "greater")}>
             +
@@ -93,6 +94,7 @@ function GameScreen({ userNumber, onGameOver }) {
             -
           </PrimaryButton>
         </View>
+        {/* </View> */}
       </View>
     </View>
   );
